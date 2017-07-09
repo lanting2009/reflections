@@ -1,0 +1,40 @@
+What happens when you initialize a repository? Why do you need to do it?
+1.产生一个.git的文件夹，有了它就说明目前这个是git版本库
+
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+1.做一个缓冲，把想提交的部分先放在这里，以免不必要的一些版本提交
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+1.每次提交到暂存区的代码都是一个完整的小逻辑，一起提交到版本库中
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+1.大部分代码逻辑都是一样的，只是要修改其中一部分的逻辑，这个时候就可以创建分支
+
+How do the diagrams help you visualize the branch structure?
+
+1.图标上每一条线就代表一个分支，并且每一个commit按照提交的时间进行排序，还能看到不同分支之间的关系，
+  还能看到分支顶点是什么。   
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+1.合并了两个分支，就是把两个分支的所有更改合并到了一个新版本上，并且提交。
+图标中，合并后会产生一个新的分支顶点，代表了产生了一个新版本
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+1.自动合并
+	优点：
+		减少人力，速度更快
+	缺点：
+	  	产生冲突
+2.手工合并
+	优点：
+		更准确地合并，不怎么会产生冲突
+	缺点：
+		速度更慢
